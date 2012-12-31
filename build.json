@@ -11,5 +11,8 @@
 	},
 	"anvil.jshint": {
         "all": true
+    },
+    "anvil.uglify": {
+    	"all": true
     }
 }
