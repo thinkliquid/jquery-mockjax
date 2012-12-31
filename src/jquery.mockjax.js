@@ -506,7 +506,7 @@
             var key = mockHandler.urlParams[i];
             paramValues[key] = captures[i];
         }
-        
+
         origSettings.urlParams = paramValues;
     }
 
@@ -520,8 +520,9 @@
         //url:        null,
         //type:       'GET',
         log:          function( msg ) {
-            if ( window[ 'console' ] && window.console.log ) {
-                window.console.log.apply( console, arguments );
+            if ( window.console && window.console.log ) {
+                var log = Function.prototype.bind.call( console.log, console );
+                log.apply( console, arguments );
             }
         },
         status:       200,
