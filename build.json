@@ -1,0 +1,15 @@
+{
+	"anvil.http": {
+		"paths": {
+			"/": "./"
+		}
+	},
+	"anvil.testem": {
+	    "launch": "Chrome",
+	    "test_page": "spec/index.html",
+	    "framework": "qunit"
+	},
+	"anvil.jshint": {
+        "all": true
+    }
+}
