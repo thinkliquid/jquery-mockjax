@@ -509,9 +509,7 @@
 
 	// Public
 
-	$.extend({
-		ajax: handleAjax
-	});
+	$.ajax = handleAjax;
 
 	$.mockjaxSettings = {
 		//url:        null,
@@ -577,4 +575,4 @@
 	$.mockjax.mockedAjaxCalls = function() {
 		return mockedAjaxCalls;
 	};
-})(jQuery);
+})(Zepto);
